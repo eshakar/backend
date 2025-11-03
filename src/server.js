@@ -16,7 +16,7 @@ app.use(rateLimiter);
 
 if (process.env.NODE_ENV !== "production") {
   app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://backend-7s47.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
